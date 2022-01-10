@@ -35,3 +35,14 @@ github地址：https://github.com/mrzhouxl/comRenderDemo
 
 git add .
 git commit -m ''
+
+# echarts 
+版本比较：https://zhuanlan.zhihu.com/p/349299200
+echarts封装：https://www.cnblogs.com/zhangnan35/p/12680038.html
+
+业务数据和样式配置数据分离，我只需要传入业务数据就行了
+它的大小要完全由使用者决定
+不会因为缩放出现变形问题，而是能很好地自适应
+有时候某个图表的样式可能有点不一样，希望能保留自己配置样式的灵活性
+无论传入什么数据都能正确地更新视图
+如果我传入的数据为空，能展示一个空状态
