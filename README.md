@@ -25,12 +25,15 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 视频：https://www.bilibili.com/video/BV183411q7nP/?spm_id_from=autoNext
 github地址：https://github.com/mrzhouxl/comRenderDemo
 
-# 具体的拖动实现方案参考vue-element-adminbyvue-cli4.0项目，有个directive指令文件夹中有相关拖动的指令v-el-drag-dialog，不过好像需要基于element-ui实现
+### 具体的拖动实现方案参考vue-element-adminbyvue-cli4.0项目，有个directive指令文件夹中有相关拖动的指令v-el-drag-dialog，不过好像需要基于element-ui实现
 
 
 今日任务：
 1、大屏组件（1、大屏组件，如饼图、柱状图）`参考：vue-element-adminbyvue-cli4.0项目@/components/Charts/`
 2、git管理
+
+git config list
+git config user.name
 
 
 git add .
@@ -46,3 +49,21 @@ echarts封装：https://www.cnblogs.com/zhangnan35/p/12680038.html
 有时候某个图表的样式可能有点不一样，希望能保留自己配置样式的灵活性
 无论传入什么数据都能正确地更新视图
 如果我传入的数据为空，能展示一个空状态
+
+
+# VUE
+## 组件参数传递
+https://blog.csdn.net/liyunkun888/article/details/83269692
+
+
+
+# git
+
+## 问题
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory
+## 原因
+原因是路径中存在 / 的符号转义问题，false就是不转换符号默认是true，相当于把路径的 / 符号进行转义，这样添加的时候就有问题
+## 解决办法
+但是我不选择解决
+git config --global core.autocrlf false
