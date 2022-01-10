@@ -51,6 +51,10 @@ echarts封装：https://www.cnblogs.com/zhangnan35/p/12680038.html (TODO：重�
 如果我传入的数据为空，能展示一个空状态
 
 
+## echarts实现方案1（似阿里DataV，大屏数据展示，但这个是开源免费的）
+http://datav.jiaminghi.com/
+## echarts实现方案2（百度Sugar）
+
 # VUE
 ## 组件参数传递
 https://blog.csdn.net/liyunkun888/article/details/83269692
