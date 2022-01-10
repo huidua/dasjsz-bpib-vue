@@ -52,8 +52,14 @@ echarts封装：https://www.cnblogs.com/zhangnan35/p/12680038.html (TODO：重�
 
 
 ## echarts实现方案1（似阿里DataV，大屏数据展示，但这个是开源免费的）
+来源：http://www.zhe94.com/631.html
 http://datav.jiaminghi.com/
 ## echarts实现方案2（百度Sugar）
+
+# lodash 安装
+``` 
+npm install lodash --save
+```
 
 # VUE
 ## 组件参数传递
@@ -71,3 +77,7 @@ The file will have its original line endings in your working directory
 ## 解决办法
 但是我不选择解决
 git config --global core.autocrlf false
+
+
+# 一篇关于DDD看法的文章
+https://www.jdon.com/43715

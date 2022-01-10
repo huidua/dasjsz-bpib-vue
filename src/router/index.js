@@ -15,6 +15,16 @@ var globalRoutes = [
     component: () => import('@/views/home/index.vue'),
   },
   {
+    path: '/echarts',
+    name: 'echarts',// linemark
+    component: () => import('@/views/charts/line.vue'),
+  },
+  {
+    path: '/echarts/pie',
+    name: 'pie',// pie
+    component: () => import('@/views/charts/pie.vue'),
+  },
+  {
     path: '/',
     name: 'HelloWorld',
     redirect:'/home',
