@@ -31,3 +31,7 @@ github地址：https://github.com/mrzhouxl/comRenderDemo
 今日任务：
 1、大屏组件（1、大屏组件，如饼图、柱状图）`参考：vue-element-adminbyvue-cli4.0项目@/components/Charts/`
 2、git管理
+
+
+git add .
+git commit -m ''
