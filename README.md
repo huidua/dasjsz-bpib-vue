@@ -28,7 +28,7 @@ github地址：https://github.com/mrzhouxl/comRenderDemo
 ### 具体的拖动实现方案参考vue-element-adminbyvue-cli4.0项目，有个directive指令文件夹中有相关拖动的指令v-el-drag-dialog，不过好像需要基于element-ui实现
 
 
-今日任务：
+今日任务TODO：
 1、大屏组件（1、大屏组件，如饼图、柱状图）`参考：vue-element-adminbyvue-cli4.0项目@/components/Charts/`
 2、git管理
 
@@ -41,7 +41,7 @@ git commit -m ''
 
 # echarts 
 版本比较：https://zhuanlan.zhihu.com/p/349299200
-echarts封装：https://www.cnblogs.com/zhangnan35/p/12680038.html
+echarts封装：https://www.cnblogs.com/zhangnan35/p/12680038.html (TODO：重点之后要去封装)
 
 业务数据和样式配置数据分离，我只需要传入业务数据就行了
 它的大小要完全由使用者决定
