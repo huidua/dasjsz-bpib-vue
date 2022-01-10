@@ -1,26 +1,30 @@
 <template>
-  <div>hhhh</div>
+  <div>
+    <a href="/echarts">Line</a>
+    <a href="/echarts/pie">pie</a>
+  </div>
+
 </template>
 
 <script>
-import API from  '@/api/user.js'
+import API from "@/api/user.js";
 
 export default {
   components: {},
   created() {
-    this.queryApi()
+    this.queryApi();
   },
   data() {
-    return {}
+    return {};
   },
   methods: {
-    queryApi(){
-      API.login().then(res =>{
-        console.log("请求成功login",res)
-      })
-    }
+    queryApi() {
+      API.login().then((res) => {
+        console.log("请求成功login", res);
+      });
+    },
   },
-}
+};
 </script>
 
 <style>

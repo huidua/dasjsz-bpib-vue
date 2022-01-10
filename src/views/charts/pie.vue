@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>pieChart</h1>
-    <div class="chart-container">
+    <div class="chart-container" style="width:50%">
       <echart-pie
         :series-data="dataList"
         :extra-option="extraOption"
