@@ -13,11 +13,24 @@ Vue.use(Router)
  * @param {String} path 
  * @returns 
  */
-const _import = path => require('@/views/' + (path.indexOf('/') === 0 ? path.substring(1) : path) + '.vue')
+// const _import = path => require('@/views/' + (path.indexOf('/') === 0 ? path.substring(1) : path) + '.vue')
 
 // TODO 路由自动生成
 
+let routers = require.context('@/views', true, /\.vue$/i).keys() // 匹配后缀是vue的文件
 
+console.log(routers)
+let d = [] ;
+routers.forEach(item => {
+  console.log(item)
+  const routerChild = { // 定义路由对象
+    path: item.split('.')[1], 
+  }
+
+  d.push(routerChild) // views中视图的路由路径
+
+})
+console.log(d)
 
 // =======路由匹配部分====
 var globalRoutes = [

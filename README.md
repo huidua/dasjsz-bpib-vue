@@ -60,8 +60,43 @@ https://blog.csdn.net/liyunkun888/article/details/83269692
 
 
 # Router 
+Vue Router: https://router.vuejs.org/zh/
 ## 路由自动化实现
 > https://www.cnblogs.com/mianbaodaxia/p/11452123.html
+
+> // 动态路径参数 以冒号开头
+> { path: '/user/:id', component: User }
+> // 可获取参数
+> {{ this.$route.params.id }} 
+> 除了params，还提供了其他的有用信息 [api文档](https://router.vuejs.org/zh/api/#%E8%B7%AF%E7%94%B1%E5%AF%B9%E8%B1%A1)
+> 当路由参数发生改变是，可以做监听 watch (监测变化) $route 对象  [api文档](https://router.vuejs.org/zh/guide/essentials/dynamic-matching.html#%E5%93%8D%E5%BA%94%E8%B7%AF%E7%94%B1%E5%8F%82%E6%95%B0%E7%9A%84%E5%8F%98%E5%8C%96)
+>   // 会匹配以 `/user-` 开头的任意路径
+>  path: '/user-*'
+
+> 当路由有name时候可以根据name跳转路由 https://router.vuejs.org/zh/guide/essentials/named-routes.html
+
+> 确保 next 函数在任何给定的导航守卫中都被严格调用一次。它可以出现多于一次，但是只能在所有的逻辑路径都不重叠的情况下，否则钩子永远都不会被解析或报错。这里有一个在用户未能验证身份时重定向到 /login 的示例：[全局前置守卫](https://router.vuejs.org/zh/guide/advanced/navigation-guards.html#%E5%85%A8%E5%B1%80%E5%89%8D%E7%BD%AE%E5%AE%88%E5%8D%AB)
+``` javascript
+// BAD
+router.beforeEach((to, from, next) => {
+  if (to.name !== 'Login' && !isAuthenticated) next({ name: 'Login' })
+  // 如果用户未能验证身份，则 `next` 会被调用两次
+  next()
+})
+
+// GOOD
+router.beforeEach((to, from, next) => {
+  if (to.name !== 'Login' && !isAuthenticated) next({ name: 'Login' })
+  else next()
+})
+```
+
+> 路由嵌套 ：[全局前置守卫](https://router.vuejs.org/zh/guide/essentials/nested-routes.html)
+
+
+
+# webpack
+https://webpack.docschina.org/guides/getting-started/
 
 # git
 
