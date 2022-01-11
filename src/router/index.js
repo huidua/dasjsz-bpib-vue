@@ -7,6 +7,18 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 
+/**
+ * 动态导入views中的视图组件
+ * <p>参数path会自动去除path中的第一个斜杠</p>
+ * @param {String} path 
+ * @returns 
+ */
+const _import = path => require('@/views/' + (path.indexOf('/') === 0 ? path.substring(1) : path) + '.vue')
+
+// TODO 路由自动生成
+
+
+
 // =======路由匹配部分====
 var globalRoutes = [
   {
@@ -27,7 +39,7 @@ var globalRoutes = [
   {
     path: '/',
     name: 'HelloWorld',
-    redirect:'/home',
+    redirect: '/home',
     // component: HelloWorld
   }];
 
@@ -51,7 +63,7 @@ router.beforeEach((to, from, next) => {
   next()
 })
 
-router.afterEach((to, from)=>{
+router.afterEach((to, from) => {
 
 })
 

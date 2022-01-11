@@ -59,6 +59,9 @@ npm install lodash --save
 https://blog.csdn.net/liyunkun888/article/details/83269692
 
 
+# Router 
+## 路由自动化实现
+> https://www.cnblogs.com/mianbaodaxia/p/11452123.html
 
 # git
 
