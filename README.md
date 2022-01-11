@@ -28,16 +28,9 @@ github地址：https://github.com/mrzhouxl/comRenderDemo
 ### 具体的拖动实现方案参考vue-element-adminbyvue-cli4.0项目，有个directive指令文件夹中有相关拖动的指令v-el-drag-dialog，不过好像需要基于element-ui实现
 
 
-今日任务TODO：
+# TODO：
 1、大屏组件（1、大屏组件，如饼图、柱状图）`参考：vue-element-adminbyvue-cli4.0项目@/components/Charts/`
-2、git管理
-
-git config list
-git config user.name
-
-
-git add .
-git commit -m ''
+2、实现大屏的缩放效果，当屏幕小的时候给最外层容器`style="transform: scaleX(1) scaleY(0.978704);"`的样式，容器内的各个图表外层也需要包裹一层容器，并且使用绝对定位，给之后的拖拽实现做铺垫。
 
 # echarts 
 版本比较：https://zhuanlan.zhihu.com/p/349299200
@@ -69,6 +62,11 @@ https://blog.csdn.net/liyunkun888/article/details/83269692
 
 # git
 
+git config list
+git config user.name
+
+git add .
+git commit -m ''
 ## 问题
 warning: LF will be replaced by CRLF in README.md.
 The file will have its original line endings in your working directory
@@ -86,3 +84,5 @@ https://www.jdon.com/43715
 # 什么是 Fuse.js？
 Fuse.js 是一个功能强大、轻量级的模糊搜索库，零依赖。
 https://fusejs.io/
+
+
