@@ -130,3 +130,27 @@ https://fusejs.io/
 # 什么是微服务
 微服务的概念源于2014年3月Martin Fowler所写的一篇文章。[“Microservices”](https://martinfowler.com/articles/microservices.html)
 
+# 基于echarts的开源项目smartchart
+https://www.smartchart.cn/
+https://gitee.com/smartchart/smartchart/
+
+
+# git项目
+
+[echarts-java类库](https://github.com/abel533/ECharts)
+[可拖拽](https://github.com/ddiu8081/ChartFun)
+react：https://github.com/hzzly/credit-bi-react
+这个看着不错：https://github.com/bym110/vue-echarts
+这个看着不错：https://bym110.github.io/vue-echarts/preview/#/page1
+布局：https://github.com/sdras/cssgridgenerator
+https://github.com/DataV-Team/DataV
+AJ-Report是全开源的一个BI平台：https://github.com/anji-plus/report
+100套大数据可视化模板：https://github.com/iGaoWei/BigDataView
+大屏图片素材：https://github.com/byc233518/display-background-image
+dataV组件:https://github.com/ChaosSoong/datav-component
+# 一些图片
+https://github.com/nichan-13/Echarts-Demo/tree/master/images
+
+# 屏数据可视化模板
+https://huangsong.blog.csdn.net/article/details/89713330
+
