@@ -91,7 +91,7 @@ router.beforeEach((to, from, next) => {
 })
 ```
 
-> 路由嵌套 ：[全局前置守卫](https://router.vuejs.org/zh/guide/essentials/nested-routes.html)
+> 路由嵌套 ：[路由嵌套](https://router.vuejs.org/zh/guide/essentials/nested-routes.html)
 
 
 
@@ -124,3 +124,5 @@ Fuse.js 是一个功能强大、轻量级的模糊搜索库，零依赖。
 https://fusejs.io/
 
 
+# Web API 接口参考文档
+[MDN Web Docs Web API 接口参考](https://developer.mozilla.org/zh-CN/docs/Web/API)

@@ -38,6 +38,7 @@ export default {
     },
   },
   mounted() {
+    debugger
     this.chart = echarts.init(this.$el);
     this.updateChartView(); // 更新视图
     window.addEventListener("resize", this.handleWindowResize());
