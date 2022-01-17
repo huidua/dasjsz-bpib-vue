@@ -117,7 +117,9 @@ git config --global core.autocrlf false
 
 # 一篇关于DDD看法的文章
 https://www.jdon.com/43715
-
+https://my.oschina.net/sofn/blog/5397141
+https://www.jdon.com/45994
+https://www.jdon.com/45857
 
 # 什么是 Fuse.js？
 Fuse.js 是一个功能强大、轻量级的模糊搜索库，零依赖。
@@ -153,4 +155,8 @@ https://github.com/nichan-13/Echarts-Demo/tree/master/images
 
 # 屏数据可视化模板
 https://huangsong.blog.csdn.net/article/details/89713330
+
+超全面设计指南：如何做大屏数据可视化设计？http://www.woshipm.com/pd/1782868.html
+五个方面，聊聊大数据可视化的初体验 http://www.woshipm.com/data-analysis/2279512.html
+一个炫酷大屏展示页的打造过程 https://juejin.cn/post/6844903518180999176
 
