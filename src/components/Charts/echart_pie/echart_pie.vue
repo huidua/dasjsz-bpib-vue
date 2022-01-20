@@ -17,7 +17,7 @@ export default {
       default: () => [],
     },
     // 特殊定制配置
-    // 一般UI回归到一个统一的设计规范（比如颜色，字体，图例格式，位置等）
+    // 一般UI会规定一个统一的设计规范（比如颜色，字体，图例格式，位置等）
     // 但不排除某个图表会和设计规范不同，需要特殊定制样式，所以开放这个配置，增强灵活性
     extraOption: {
       type: Object,
@@ -38,7 +38,6 @@ export default {
     },
   },
   mounted() {
-    debugger
     this.chart = echarts.init(this.$el);
     this.updateChartView(); // 更新视图
     window.addEventListener("resize", this.handleWindowResize());
@@ -59,8 +58,7 @@ export default {
         return `${name} ${percent}`;
       };
 
-      console.log("i(´▽`ʃ♡ƪ)图表系列数据", this.seriesData);
-
+      // ====================   【配置】    ==========================
       return merge(
         {},
         BASIC_OPTION,
@@ -79,15 +77,37 @@ export default {
       if (!this.chart) return;
 
       const fullOption = this.assembleDataToOption();
-      console.log("io(*^▽^*)┛生成图表的配置数据", fullOption);
+      console.log("生成图表的配置数据📊", fullOption);
       this.chart.setOption(fullOption, true);
     },
     /**
      * 当窗口缩放时，echart动态调整自身大小
+     * 用到了防抖节流技术，节省性能消耗
      */
     handleWindowResize() {
-      if (!this.chart) return;
-      this.chart.resize();
+      let vuecontent = this; //这里的this指的是VueComponent
+      function debounce(func, wait = 0) {
+        let timeid = null;
+
+        return function(e) {
+          let windowcontext = this; // 这里的this指的是Window
+          let args = arguments;
+
+          if (timeid) {
+            clearTimeout(timeid);
+          }
+          timeid = setTimeout(function () {
+            func.apply(windowcontext, args);
+          }, wait);
+
+        };
+      }
+      function handle() {
+        if (!vuecontent.chart) return;
+        console.log("窗口发生改变⏳");
+        vuecontent.chart.resize();
+      }
+      return debounce(handle,150);
     },
   },
 };
