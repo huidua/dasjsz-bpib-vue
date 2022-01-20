@@ -28,13 +28,14 @@ github地址：https://github.com/mrzhouxl/comRenderDemo
 ### 具体的拖动实现方案参考vue-element-adminbyvue-cli4.0项目，有个directive指令文件夹中有相关拖动的指令v-el-drag-dialog，不过好像需要基于element-ui实现
 
 
-# TODO：
+# 一、TODO：
 1、大屏组件（1、大屏组件，如饼图、柱状图）`参考：vue-element-adminbyvue-cli4.0项目@/components/Charts/`
+
 2、实现大屏的缩放效果，当屏幕小的时候给最外层容器`style="transform: scaleX(1) scaleY(0.978704);"`的样式，容器内的各个图表外层也需要包裹一层容器，并且使用绝对定位，给之后的拖拽实现做铺垫。
 
-# echarts 
-版本比较：https://zhuanlan.zhihu.com/p/349299200
-echarts封装：https://www.cnblogs.com/zhangnan35/p/12680038.html (TODO：重点之后要去封装)
+# 二、echarts 
+- 版本比较：https://zhuanlan.zhihu.com/p/349299200
+- echarts封装：https://www.cnblogs.com/zhangnan35/p/12680038.html (TODO：重点之后要去封装)
 
 业务数据和样式配置数据分离，我只需要传入业务数据就行了
 它的大小要完全由使用者决定
@@ -49,17 +50,17 @@ echarts封装：https://www.cnblogs.com/zhangnan35/p/12680038.html (TODO：重�
 http://datav.jiaminghi.com/
 ## echarts实现方案2（百度Sugar）
 
-# lodash 安装
+# 三、lodash 安装
 ``` 
 npm install lodash --save
 ```
 
-# VUE
+# 四、VUE
 ## 组件参数传递
 https://blog.csdn.net/liyunkun888/article/details/83269692
 
 
-# Router 
+# 五、Router 
 Vue Router: https://router.vuejs.org/zh/
 ## 路由自动化实现
 > https://www.cnblogs.com/mianbaodaxia/p/11452123.html
@@ -95,10 +96,10 @@ router.beforeEach((to, from, next) => {
 
 
 
-# webpack
+# 六、webpack
 https://webpack.docschina.org/guides/getting-started/
 
-# git
+# 七、git
 
 git config list
 git config user.name
@@ -115,19 +116,22 @@ The file will have its original line endings in your working directory
 git config --global core.autocrlf false
 
 
-# 一篇关于DDD看法的文章
+# 八、一篇关于DDD看法的文章
 https://www.jdon.com/43715
 https://my.oschina.net/sofn/blog/5397141
 https://www.jdon.com/45994
 https://www.jdon.com/45857
 
-# 什么是 Fuse.js？
+# 九、什么是 Fuse.js？
 Fuse.js 是一个功能强大、轻量级的模糊搜索库，零依赖。
 https://fusejs.io/
 
 
-# Web API 接口参考文档
+# 十、Web API 接口参考文档
 [MDN Web Docs Web API 接口参考](https://developer.mozilla.org/zh-CN/docs/Web/API)
+
+# MDN
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript
 
 # 什么是微服务
 微服务的概念源于2014年3月Martin Fowler所写的一篇文章。[“Microservices”](https://martinfowler.com/articles/microservices.html)
@@ -139,30 +143,27 @@ https://gitee.com/smartchart/smartchart/
 
 # git项目
 
-[echarts-java类库](https://github.com/abel533/ECharts)
-[可拖拽](https://github.com/ddiu8081/ChartFun)
-react：https://github.com/hzzly/credit-bi-react
-这个看着不错：https://github.com/bym110/vue-echarts
-这个看着不错：https://bym110.github.io/vue-echarts/preview/#/page1
-布局：https://github.com/sdras/cssgridgenerator
-https://github.com/DataV-Team/DataV
-AJ-Report是全开源的一个BI平台：https://github.com/anji-plus/report
-100套大数据可视化模板：https://github.com/iGaoWei/BigDataView
-大屏图片素材：https://github.com/byc233518/display-background-image
-dataV组件:https://github.com/ChaosSoong/datav-component
+- [echarts-java类库](https://github.com/abel533/ECharts)
+- [可拖拽](https://github.com/ddiu8081/ChartFun)
+- react：https://github.com/hzzly/credit-bi-react
+- 这个看着不错：https://github.com/bym110/vue-echarts
+- 这个看着不错：https://bym110.github.io/vue-echarts/preview/#/page1
+- 布局：https://github.com/sdras/cssgridgenerator
+- https://github.com/DataV-Team/DataV
+- AJ-Report是全开源的一个BI平台：https://github.com/anji-plus/report
+- 100套大数据可视化模板：https://github.com/iGaoWei/BigDataView
+- 大屏图片素材：https://github.com/byc233518/display-background-image
+- dataV组件:https://github.com/ChaosSoong/datav-component
 # 一些图片
-https://github.com/nichan-13/Echarts-Demo/tree/master/images
+- https://github.com/nichan-13/Echarts-Demo/tree/master/images
 
 # 屏数据可视化模板
-https://huangsong.blog.csdn.net/article/details/89713330
+- https://huangsong.blog.csdn.net/article/details/89713330
 
-超全面设计指南：如何做大屏数据可视化设计？http://www.woshipm.com/pd/1782868.html
-五个方面，聊聊大数据可视化的初体验 http://www.woshipm.com/data-analysis/2279512.html
-一个炫酷大屏展示页的打造过程 https://juejin.cn/post/6844903518180999176
+- 超全面设计指南：如何做大屏数据可视化设计？http://www.woshipm.com/pd/1782868.html
+- 五个方面，聊聊大数据可视化的初体验 http://www.woshipm.com/data-analysis/2279512.html
+- 一个炫酷大屏展示页的打造过程 https://juejin.cn/post/6844903518180999176
 
-
-# MDN
-https://developer.mozilla.org/zh-CN/docs/Web/JavaScript
 
 # 表情图标Emoji
 https://emojixd.com/
