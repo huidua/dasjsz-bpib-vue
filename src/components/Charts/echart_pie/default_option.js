@@ -1,8 +1,8 @@
 // 这里的数据会被深度合并
 const BASIC_OPTION = {
     title: {
-      text: "饼图Pie标题",
-      subtext: "子标题",
+      // text: "饼图Pie标题",
+      // subtext: "子标题",
       left: "center",
     },
     tooltip: {
@@ -14,7 +14,7 @@ const BASIC_OPTION = {
     },
     series: [
       {
-        name: "XXX占比",
+        // name: "占比",
         type: "pie",
         radius: "50%",
         emphasis: {

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1>pieChart</h1>
-    <div class="chart-container" style="width:50%">
+    <h1></h1>
+    <div class="chart-container" style="width: 50%;height:500px">
       <echart-pie
         :series-data="dataList"
         :extra-option="extraOption"
@@ -12,29 +12,33 @@
 
 <script>
 import EchartPie from "@/components/Charts/echart_pie";
+
+//  ========================== 样式 ==========================
+import { FEATURE as BarStyle } from "@/components/Charts/echart_pie/features/option1.js";
+
 export default {
   name: "pie",
   components: { EchartPie },
   data() {
     return {
-      dataList: [
-        {
-          name: "西瓜",
-          value: 20,
-        },
-        {
-          name: "橘子",
-          value: 13,
-        },
-        {
-          name: "杨桃",
-          value: 33,
-        },
-      ],
-      extraOption: {
-        color: ["#fe883a", "#2d90d1", "#f75981", "#90e2a9"],
-      },
+      dataList: [],
+      extraOption: {},
     };
+  },
+  created() {
+    console.log("create执行");
+
+    // 数据
+    const data = [{ name: "西瓜", value: 20,}, { name: "橘子",value: 13,},{name: "杨桃",value: 33,}];
+    // 样式
+    const style = Object.assign({}, BarStyle, {title: { text: "合并之后的对象" },});
+
+    this.dataList = data;
+    this.extraOption = style;
+
+  },
+  mounted() {
+    console.log("mounted执行");
   },
 };
 </script>

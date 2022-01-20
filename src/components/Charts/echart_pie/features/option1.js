@@ -1,0 +1,81 @@
+export const FEATURE = {
+  grid: {
+    containLabel: true
+  },
+  title: {
+    text: "",
+    // subtext: "子标题",
+    left: "center",
+  },
+  textStyle: {
+    color: "#fff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    fontSize: 14,
+    lineHeight: 30,
+    textBorderColor: "",
+    textBorderWidth: 1,
+    textBorderType: "solid",
+    textBorderDashOffset: 1,
+    textShadowColor: "transparent",
+    textShadowBlur: 1,
+    textShadowOffsetX: 1,
+    textShadowOffsetY: 1,
+    overflow: "none",
+  },
+  subtextStyle: {
+    color: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    fontSize: 12,
+    lineHeight: 0,
+    textBorderColor: "",
+    textBorderWidth: 0,
+    textBorderType: "solid",
+    textBorderDashOffset: 0,
+    textShadowColor: "transparent",
+    textShadowBlur: 0,
+    textShadowOffsetX: 0,
+    textShadowOffsetY: 0,
+    overflow: "none",
+  },
+  color: ["#E8AA2E", "#FFE45E", "#5151FA", "#3D9CFF"],
+  tooltip: {
+    trigger: "item",
+  },
+  series: [
+    {
+      itemStyle: {
+        borderWidth: 0,
+        borderColor: "#FFE768",
+        shadowColor: "#FFE768",
+        borderRadius: 0,
+        shadowBlur: 0,
+        shadowOffsetX: 0,
+        shadowOffsetY: 0,
+      },
+      label: {
+        show: true,
+        position: "outside",
+        formatter: null,
+        fontSize: 14,
+        lineHeight: 22,
+        // color: "#ffffff",
+      },
+      labelLine: {
+        length: 15,
+        length2: 15,
+        show: true,
+        color: "#00ffff",
+        lineStyle: { width: 1, type: "solid" },
+      },
+      radius: ["48%", "60%"],
+      type: "pie",
+    },
+  ],
+  legend: {
+    orient: "vertical",
+    left: "left",
+  },
+
+}

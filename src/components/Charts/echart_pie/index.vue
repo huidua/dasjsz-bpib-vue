@@ -3,7 +3,7 @@
       <img src="" alt="">暂无数据
   </div>
   <!-- v-bind="$props" 可以将父组件的所有props下发给它的子组件,子组件需要在其props:{} 中定义要接受的props。-->
-  <chart-pie v-else v-bind="$props" style="width: 100%; height: 500px" />
+  <chart-pie v-else v-bind="$props" style="width: 100%; height:100%" />
 </template>
 
 <script>
