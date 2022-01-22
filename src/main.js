@@ -11,6 +11,7 @@ Vue.prototype.$ajax = axios;
 
 Vue.config.productionTip = false
 
+
 //引入mockjs
 process.env.Mock && require('../mock')
 
