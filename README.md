@@ -167,3 +167,9 @@ https://gitee.com/smartchart/smartchart/
 
 # 表情图标Emoji
 https://emojixd.com/
+
+# Vue项目中的文件和文件夹命名规范
+https://blog.csdn.net/diaoyulian565665/article/details/101598614
+
+# VUE官方风格指南
+https://cn.vuejs.org/v2/style-guide/
